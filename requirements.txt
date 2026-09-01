@@ -1,0 +1,14 @@
+# Deliberately short. This gets installed on a fresh Windows machine by someone
+# who is not a developer, so nothing here may need a compiler or a system
+# library. All three ship as wheels on every platform that matters.
+requests==2.34.2
+Pillow==12.3.0
+imagehash==4.3.2
+
+# Only needed to read Altera/Shopify .xlsx exports. A CSV-to-CSV run does not
+# touch it, but it is cheap and leaving it optional caused more support
+# questions than it saved.
+openpyxl==3.1.5
+
+# Tests only.
+pytest==9.1.1

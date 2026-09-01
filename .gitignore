@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Catalogue exports and anything derived from them. These carry a real shop's
+# titles, SKUs, prices and image URLs -- none of it belongs in git.
+*.csv
+*.xlsx
+phash_cache.json
+*_cache.json
